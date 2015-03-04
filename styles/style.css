@@ -18,7 +18,6 @@ header {
 	height: 110vh;
 	box-shadow: 0 0 10px rgba(0,0,0,0.8);
 	margin-top: -20px;
-	background-image: url('images/dinner-date.jpg');
 	color: rgba(255,255,255,0.9);
 }
 
@@ -87,6 +86,11 @@ h4 {
 	cursor:pointer;
 }
 
+a {
+	text-decoration: none;
+	color: rgba(0,0,0,0.9);
+}
+
 .date:hover {
 	background: #c0392b;
 }
@@ -143,4 +147,46 @@ img.clicked {
 
 .movie img.clicked, .drink img.clicked {
 	margin-top: 25px;
+}
+
+
+@media (max-width: 1160px) {
+	.headerWrapper p {
+		display: none;
+	}
+}
+
+
+@media (max-width: 970px){
+	.resultsBox img {
+		width: 150px;
+	}
+
+	.imgWrapper {
+		height: 250px;
+	}
+}
+
+@media (max-width: 680px){
+	h1{
+		font-size: 1.5em;
+	}
+
+	.headerWrapper {
+		transform: translateY(20%); 
+	}
+
+	.date {
+		width: 100%;
+	}
+	
+	.resultsBox {
+		width: 100%;
+		height: 300px;
+		margin-top: 85px;
+	}
+
+	.resultsBox:first-child {
+		margin-top: 20px;
+	}
 }
